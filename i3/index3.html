@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../modal/modal.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../images/Логотип.png" alt="Логотип БПК">
+            <div class="logo-text">Белорецкий<br>
+                педагогический<br>
+                колледж</div>
+                      
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">Назад</a>
+            <a href="#speciality1">Меню на среду</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class='bx bxs-basket' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Твоя корзина</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Сумма</div>
+                    <div class="total-price">0₽</div>
+                </div>
+                <button type="button" class="btn-buy" data-path="first" data-animation="fadeInUp">Заказать</button>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>   
+        </div>
+    </header>
+    <div class="modal">
+		<div class="modal-container order-modal" data-target="first">
+			<div class="modal-content order-modal_content">
+                <div class="order-modal_top">
+                    <h2 class="order-modal_title">Оформление заказа</h2>
+                    <span class="order-modal_number">Заказ № 1  </span>
+                </div>
+                <div class="order-modal_info">
+                    <div class="order-modal_quantity order-modal_info-item">Товаров в заказе:
+                        <span>3 шт</span>
+                    </div>
+                    <div class="order-modal_summ order-modal_info-item">Общая сумма:
+                        <span>568 789 ₽</span>
+                    </div>
+                    <div class="order-modal_products order-modal_info-item">
+                        <button class="order-modal_btn">Состав заказа</button>
+                        <ul class="order-modal_list">
+                            <li class="order-modal_item">
+                                <article class="order-modal_products order-product">
+                                    <img src="../images/product2.jpg" alt="" class="order-product_img">
+                                    <div class="order-product_text">
+                                        <h3 class="order-product_title">Солянка</h3>
+                                        <span class="order-product_price">100 ₽</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-modal_item">
+                                <article class="order-modal_products order-product">
+                                    <img src="../images/product2.jpg" alt="" class="order-product_img">
+                                    <div class="order-product_text">
+                                        <h3 class="order-product_title">Солянка</h3>
+                                        <span class="order-product_price">100 ₽</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="order-modal_item">
+                                <article class="order-modal_products order-product">
+                                    <img src="../images/product2.jpg" alt="" class="order-product_img">
+                                    <div class="order-product_text">
+                                        <h3 class="order-product_title">Солянка</h3>
+                                        <span class="order-product_price">100 ₽</span>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="" class="order-modal_form order">
+                    <label class="order_label">
+                        <span class="order_text">Ваше имя</span>
+                        <input type="text" name="Имя" class="order_input">
+                    </label>
+                    <label class="order_label">
+                        <span class="order_text">Номер телефона</span>
+                        <input type="tel" name="Телефон" class="order_input" placeholder="+7 (___)___-__-__">
+                    </label>
+                    <label class="order_label">
+                        <span class="order_text">Email</span>
+                        <input type="email" name="Email" class="order_input" placeholder="post@gmail.com">
+                    </label>
+                    <button class="order_btn btn-buy">Заказать</button>
+                </form>
+			</div>
+		</div>
+	</div>
+    <form action="" id="search-form">
+        <input type="search" name="" placeholder="Ищите здесь..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <section class="speciality1" id="speciality1">
+
+        <h1 class="heading">Категории<span> блюд</span></h1>
+        <div class="box-container1">
+
+            <div class="box">
+                <a href="ПервыеБ.html"><img class="image1" src="../images/Понедельник.jpg" alt=""></a>
+                <div class="content1">
+                    <img class="image2" src="../images/Понедельник.png" alt="">
+                    <h3>Первые блюда</h3>
+                    <p>Посмотри, своё меню на сегодня</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="ВторыеБ.html"><img class="image1" src="../images/Вторник.jpg" alt=""></a>
+                <div class="content1">
+                    <img class="image2" src="../images/Вторник.png" alt="">
+                    <h3>Вторые блюда</h3>
+                    <p>Посмотри, своё меню на сегодня</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="Десерты.html"><img class="image1" src="../images/Среда.jpg" alt=""></a>
+                <div class="content1">
+                    <img class="image2" src="../images/Среда1.png" alt="">
+                    <h3>Десерты</h3>
+                    <p>Посмотри, своё меню на сегодня</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="Напитки.html"><img class="image1" src="../images/Четверг1.jpg" alt=""></a>
+                <div class="content1">
+                    <img class="image2" src="../images/Четверг.png" alt="">
+                    <h3>Напитки</h3>
+                    <p>Посмотри, своё меню на сегодня</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="Закуски.html"><img class="image1" src="../images/Пятница.jpg" alt=""></a>
+                <div class="content1">
+                    <img class="image2" src="../images/Пятница.png" alt="">
+                    <h3>Закуски</h3>
+                    <p>Посмотри, своё меню на сегодня</p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="Буфет.html"><img class="image1" src="../images/Буфет.jpg" alt=""></a>
+                <div class="content1">
+                    <img class="image2" src="../images/Буфет.png" alt="">
+                    <h3>Буфет</h3>
+                    <p>Посмотри, своё меню на сегодня</p>
+                </div>
+            </div>
+            
+            
+        <div>
+
+    </section>
+    <section class="order" id="order">
+
+        <h1 class="heading"><span>Заказать</span> сейчас</h1>
+        <div class="row">
+            <div class="image">
+                <img src="../images/9JODsdtcc0I.jpg" alt="">
+            </div>
+        
+    
+        <form action="">
+    
+            <div class="inputbox">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+            </div>
+    
+            <div class="inputbox">
+                <input type="number" placeholder="Номер">
+                <input type="email" placeholder="Емайл">
+            </div>
+    
+            <textarea placeholder="Твой заказ" name="" id="" cols="30" rows="10"></textarea>
+    
+            <input type="submit" value="Заказать сейчас" class="btn">
+        </div>        
+        </form>
+    </section>
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="btn">Facebook</a>
+            <a href="#" class="btn">Twiter</a>
+            <a href="#" class="btn">Вконтакте</a>
+            <a href="#" class="btn">Instagram</a> 
+
+        </div>
+
+        <h1 class="credit">Сделано <span>Веб-разработчиком,</span> все права защищены</h1>
+
+
+    </section>
+
+
+
+    <script src="../modal/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    
+</body>
+
+</html>

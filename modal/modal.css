@@ -1,0 +1,207 @@
+.modal {
+    --transition-time: 0.3s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0, 0.5);
+    cursor: pointer;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.modal-container {
+    position: relative;
+    width: 1000px;
+    margin: 50px auto;
+    display: none;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: default;
+    text-align: left;
+    padding: 20px; /* Добавлено для отступов внутри контейнера */
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .modal-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    .order-modal_content {
+        font-size: 0.75rem;
+    }
+    .modal-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    .order-modal_title {
+        font-size: 2.5rem;
+    }
+    .order-modal_number {
+        font-size: 1.25rem;
+    }
+    .order-modal_info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .order-product_title {
+        font-size: 1.5rem;
+    }
+    .order-product_price {
+        display: block;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .order_input {
+        font-size: 1.5rem;
+        display: flex;
+    }
+    
+    .order_label {
+        display: block;
+    }
+
+    .order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order-modal_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order-product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .order-product_img {
+        position: relative;
+        left: 5px;
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px; /* Отступ между изображением и текстовым блоком */
+    }
+    
+    .order-product_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .order-product_title {
+        position: relative;
+        left: 5px;
+        margin: 0 0 10px 0; /* Отступ между заголовком и ценой */
+    }
+    
+    
+    
+}
+
+
+
+
+.modal.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+
+.modal-container.modal-open {
+    display: inline-block;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity var(--transition-time);
+}
+
+.fade.animate-open {
+    opacity: 1;
+    transition: opacity var(--transition-time);
+}
+
+.fadeInUp {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+*:focus {
+    outline: 3px red solid;
+}
+
+
+.disable-scroll {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.modal-close {
+    position: absolute;
+    top: 2px; /* Отступ сверху */
+    right: 5px; /* Отступ справа */
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content {
+    font-size: 15px;
+    padding-left: 20px; /* Отступ слева для текста */
+}
+
+.modal-container{
+    padding: 40px;
+    width: 592px;
+    min-height: 542px;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/style.css">
+
+
+    
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../images/Логотип.png" alt="Логотип БПК">
+            <div class="logo-text">Белорецкий<br>
+                педагогический<br>
+                колледж</div>
+                      
+        </a>
+
+        <nav class="navbar">
+            <a href="index4.html">Назад</a>
+            <a href="#menu">Меню</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class='bx bxs-basket' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Твоя корзина</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Сумма</div>
+                    <div class="total-price">0₽</div>
+                </div>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <form action="" id="search-form">
+        <input type="search" name="" placeholder="Ищите здесь..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <section class="menu" id="menu">
+        <h3 class="sub-heading1">Ваше меню</h3>
+        <h1 class="heading1">На сегодня</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="../images/39.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Сосиски в тесте</h3>
+                    <p>Попробуйте наши сосиски, обёрнутые в хрустящее тесто.</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">60 ₽</span>
+    
+                </div>
+    
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="../images/43.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Творожная ватрушка</h3>
+                    <p>Приготовленная из теста с творогом, она отличается нежным вкусом и аппетитным видом</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">50 ₽</span>
+    
+                </div>
+    
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="../images/44.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Пирог с капустой и мясом</h3>
+                    <p>Сочетающий в себе аромат капусты, мяса и хрустящего теста</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">90 ₽</span>
+    
+                </div>
+    
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="../images/45.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Пирожок с картофелем</h3>
+                    <p>Блюдо, состоящее из нежного теста, наполненного вкусной картофельной начинкой.</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">50 ₽</span>
+    
+                </div>
+    
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="../images/46.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Плитка шоколада</h3>
+                    <p>Классическое удовольствие для любителей сладостей.</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">120 ₽</span>
+    
+                </div>
+    
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="../images/47.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Шоколадные батончики</h3>
+                    <p>Отличный перекус или сладкое угощение для тех, кто любит шоколадные десерты.</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">80 ₽</span>
+    
+                </div>
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    
+    
+    
+    
+    </section>
+
+
+    
+
+
+
+
+
+    <script src="../modal/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    
+</body>
+
+</html>

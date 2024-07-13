@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/style.css">
+
+
+    
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="../images/Логотип.png" alt="Логотип БПК">
+            <div class="logo-text">Белорецкий<br>
+                педагогический<br>
+                колледж</div>
+                      
+        </a>
+
+        <nav class="navbar">
+            <a href="index2.html">Назад</a>
+            <a href="#menu">Меню</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class='bx bxs-basket' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Твоя корзина</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Сумма</div>
+                    <div class="total-price">0₽</div>
+                </div>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <form action="" id="search-form">
+        <input type="search" name="" placeholder="Ищите здесь..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <section class="menu" id="menu">
+        <h3 class="sub-heading1">Ваше меню</h3>
+        <h1 class="heading1">На сегодня</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="../images/product1.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Борщ</h3>
+                    <p>Насыщенный красный борщ с нежным мясом, свежими овощами и ароматными специями</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">100 ₽</span>
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="../images/product2.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Солянка</h3>
+                    <p>Наша солянка сочетает в себе богатство вкусов: нежное мясо, кислые огурчики, ароматные специи</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">100 ₽</span>
+
+                </div>
+
+                
+
+            </div>
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="../images/product3.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Куриный суп</h3>
+                    <p>Нежное куриное мясо, свежие овощи и ароматные специи сочетаются в этом блюде</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">100 ₽</span>
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="../images/product4.jpg" alt="" class="product-img">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3 class="product-title">Харчо</h3>
+                    <p>Наш харчо приготовлен по традиционному рецепту с использованием сочного говяжьего мяса, ароматных специй, луков и чеснока</p>
+                    <button class="btn">В корзину</button>
+                    <span class="price">100 ₽</span>
+
+                </div>
+
+                
+
+            </div>
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    
+
+
+
+
+
+    <script src="../modal/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    
+</body>
+
+</html>
